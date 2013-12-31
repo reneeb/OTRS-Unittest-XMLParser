@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_test>
+<Summary>
+  <Item Name="Database">MySQL 5.5.34</Item>
+  <Item Name="Host">yourhost.example.com</Item>
+  <Item Name="OS">Linux</Item>
+  <Item Name="Perl">5.14.2</Item>
+  <Item Name="Product">OTRS 3.3.1</Item>
+  <Item Name="TestNotOk">1</Item>
+  <Item Name="TestOk">16</Item>
+  <Item Name="Time">2013-12-30 01:35:01</Item>
+  <Item Name="TimeTaken">3</Item>
+  <Item Name="Vendor">ubuntu 12.10</Item>
+</Summary>
+<Unit Name="/opt/otrs/scripts/test/JSON.t" Duration="0">
+  <Test Result="ok" Count="1">JSON - undef test (is 'undef')</Test>
+  <Test Result="ok" Count="2">JSON - empty test (is '""')</Test>
+  <Test Result="ok" Count="3">JSON - simple (is '"Some Text"')</Test>
+  <Test Result="ok" Count="4">JSON - simple (is '42')</Test>
+  <Test Result="ok" Count="5">JSON - simple (is '[1,2,"3","Foo",5]')</Test>
+  <Test Result="ok" Count="6">JSON - simple (is '{"Key1":"Value1","Key2":42,"Key3":"Another Value"}')</Test>
+  <Test Result="ok" Count="7">JSON - bool true (is 'true')</Test>
+  <Test Result="ok" Count="8">JSON - bool false (is 'false')</Test>
+  <Test Result="ok" Count="9">JSON - complex structure (is '[[1,2,"Foo","Bar"],{"Key1":"Something","Key2":["Foo","Bar"],"Key3":{"Foo":"Bar"},"Key4":{"Bar":["f","o","o"]}}]')</Test>
+  <Test Result="ok" Count="10">JSON - undef test (is 'undef')</Test>
+  <Test Result="ok" Count="11">JSON - malformed data test (is 'undef')</Test>
+  <Test Result="ok" Count="12">JSON - simple matches expected value</Test>
+  <Test Result="ok" Count="13">JSON - simple matches expected value</Test>
+  <Test Result="ok" Count="14">JSON - simple matches expected value</Test>
+  <Test Result="ok" Count="15">JSON - simple matches expected value</Test>
+  <Test Result="ok" Count="16">JSON - complex structure matches expected value</Test>
+</Unit>
+<Unit Name="/opt/otrs/scripts/test/Layout.t" Duration="3">
+  <Test Result="not ok" Count="1">ERROR: Syntax error in /opt/otrs/scripts/test/Layout.t: Can't use an undefined value as a HASH reference at /opt/otrs/Kernel/System/CustomerUser.pm line 87.
+</Test>
+</Unit>
+</otrs_test>
